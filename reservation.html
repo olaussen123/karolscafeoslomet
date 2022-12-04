@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservasjon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./images/k-favicon.png">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="logo">
+                    <a href="/index.html">KAROLS CAFE</a>
+                </div>
+                <input type="checkbox" id="nav-check">
+                <label for="nav-check" class="nav-toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html" class="active">HJEM</a></li>
+                        <li><a href="meny.html">MENY</a></li>
+                        <li><a href="accessibility.html">ACCESSIBILITY</a></li>
+                        <li><a href="omoss.html">TEKNOLOGI OG SAMFUNN</a></li>
+                        <li class="reservasjon-responsive"><a href="reservation.html">RESERVASJON</a></li>
+                </nav>
+                <li class="reservasjon"><a href="reservation.html">RESERVASJON</a></li>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-sidestart reservasjonside">
+
+        <div class="videoPlayer">
+            <video autoplay loop muted plays-inline>
+                <source src="./reservasjon-video.mp4" type="video/mp4" />
+            </video>
+            <div class="overskrift res-heading">
+                <h1>RESERVASJON OG EVENT BOOKING</h1>
+                <br>
+                <p class="overskift-under">Hos oss kan du reservere bord, eller reservere lokalet for ditt event. Vi kan
+                    ordne i stand til bryllup, konfirmasjon, bursdag etc.</p>
+                <a href="#res-section2" class="knapp bord">BOOK BORD</a>
+                <a href="#reservasjon-side2" class="knapp event">BOOK EVENT</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-reservasjon-text-img">
+        <div class="sidetekst reservasjon-bookbord">
+            <div class="content book">
+                <h1>BOOK BORD HOS OSS</h1>
+                <br>
+                <p>
+                    Her kan du booke bord for 1-9 personer. Dersom du har lyst til booke oss for ditt arrangement les
+                    mer nedenfor.
+                </p>
+                <br>
+                <p>
+                    Finner du ikke bord på ønsket tidspunkt? Ingen fare; bare kom innom,
+                    så hjelper vi deg. Vi holder av bord til drop-in så langt vi har mulighet.
+                </p>
+            </div>
+        </div>
+
+        <div class="sidetekst">
+            <section class="bord-booking-section" id="res-section2">
+                <div class="bord-booking">
+                    <div class="bord-booking-content">
+                        <h3>RESERVASJON</h3>
+                        <form>
+                            <div class="form-row-bord-booking">
+                                <select name="dager">
+                                    <option value="dag-select">Velg dag</option>
+                                    <option value="sunday">Sunday</option>
+                                    <option value="monday">Monday</option>
+                                    <option value="tuesday">Tuesday</option>
+                                    <option value="wednesday">Wednesday</option>
+                                    <option value="thursday">Thursday</option>
+                                    <option value="friday">Friday</option>
+                                    <option value="saturday">Saturday</option>
+                                </select>
+
+                                <select name="tid">
+                                    <option value="tid-select">Velg tid</option>
+                                    <option value="10">10: 00</option>
+                                    <option value="10">12: 00</option>
+                                    <option value="10">14: 00</option>
+                                    <option value="10">16: 00</option>
+                                    <option value="10">18: 00</option>
+                                    <option value="10">20: 00</option>
+                                    <option value="10">22: 00</option>
+                                </select>
+                            </div>
+
+                            <div class="form-row-bord-booking">
+                                <input type="text" placeholder="Fullt navn">
+                                <input type="text" placeholder="Tlf">
+                            </div>
+
+                            <div class="form-row-bord-booking">
+                                <input type="number" placeholder="Antall gjester" min="1">
+                                <input type="submit" value="BOOK BORD">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="bord-booking-img"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="line-res"></div>
+    <div class="container-reservasjon-text-img" id="reservasjon-side2">
+        <div class="bilde-next-to-text arrangement-book"></div>
+        <div class="sidetekst">
+            <div class="content">
+                <h1>EVENT BOOKING</h1>
+                <P>Frokostmøte, firmamiddag, jubileum, årsfest, kick-off, bryllup, konfirmasjon eller feiring? Vi hos
+                    Karol's Café vil gi deg den rette atmosfæren for ditt arrangement. Vårt lokale kan brukes til det
+                    aller meste og vi tilpasser meny og servering etter deres ønske. Vi rommer opp til 200 personer</P>
+                <p> Vi kan tilby enten buffet eller påsmurt til frokostmøter, buffet, tapas og fingermat eller
+                    selskapsmenyer til middager. Våre dyktige kokker er klare til å ta i mot din bestilling. </P>
+                <a href="event.html" class="btn" id="event-booking">LES MER</a>
+            </div>
+        </div>
+    </div>
+    <section class="lokasjon">
+        <h2>HVOR VI BEFINNER OSS</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1999.6951976793125!2d10.733189966096266!3d59.920605781869604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1soslomet!5e0!3m2!1sno!2sno!4v1668609434562!5m2!1sno!2sno"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+</body>
+<footer>
+    <div class="footer-bok">
+        <div class="footer-style">
+            <div class="footer-1">
+                <h3 class="footer-overskrift">Praktisk Info
+                </h3>
+                <h5>Eventmanager: <a href="mailto: ap@example12345.com">Andre Kastersen </a></h5>
+                <br>
+                <h5>Daglig leder: <a href="mailto: ap@example12345.com">Per Pettersen</a></h5>
+                <a href="vårekilder.html" class="kildeknapp">Våre kilder</a>
+            </div>
+            <div class="footer-2">
+                <h3 class="footer-overskrift">Åpningstider</h3>
+                <h5>Mandag-Fredag 9.00-21.00</h5>
+                <br>
+                <h5>Lørdag-Søndag 11.00-23.00</h5>
+
+            </div>
+            <div class="footer-3">
+                <h3 class="footer-overskrift">Adresse</h3>
+                <h5>Pilestredet 35</h5>
+                <br>
+                <h5>10 minutters gåavtand fra Nationaltheatret</h5>
+            </div>
+
+            <div class="kopirett">
+                <p>Copyright @2022 | Lagd av s376868 og s375825 | Karol's Cafe</p>
+            </div>
+
+            <ul class="sosiale-medier">
+                <li><a href="https://tetris.com/play-tetris" target="_blank"><img class="sosiale-png"
+                            src="./images/face4.png"></a></li>
+                <li><a href="https://tetris.com/play-tetris" target="_blank"><img class="sosiale-png2"
+                            src="./images/insta11.png"></a></li>
+                <li><a href="https://tetris.com/play-tetris" target="_blank"><img class="sosiale-png"
+                            src="./images/snap3.png"></a></li>
+                <li><a href="https://tetris.com/play-tetris" target="_blank"><img class="sosiale-png"
+                            src="./images/twitter3.png"></a></li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
+
+</html>

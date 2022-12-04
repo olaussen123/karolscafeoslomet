@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./images/k-favicon.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="logo">
+                    <a href="/index.html">KAROLS CAFE</a>
+                </div>
+                <input type="checkbox" id="nav-check">
+                <label for="nav-check" class="nav-toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html" class="active">HJEM</a></li>
+                        <li><a href="meny.html">MENY</a></li>
+                        <li><a href="accessibility.html">ACCESSIBILITY</a></li>
+                        <li><a href="omoss.html">TEKNOLOGI OG SAMFUNN</a></li>
+                        <li class="reservasjon-responsive"><a href="reservation.html">RESERVASJON</a></li>
+                </nav>
+                <li class="reservasjon"><a href="reservation.html">RESERVASJON</a></li>
+            </div>
+        </div>
+    </header>
+    <div class="container-sidestart event">
+        <div class="overskrift">
+            <h1>BOOK DITT ARRANGEMENT HOS OSS</h1>
+            <br>
+            <p class="overskift-under">
+                Hos oss kan du reservere bord, eller reservere lokalet for ditt event. Vi kan
+                ordne i stand til bryllup, konfirmasjon, bursdag etc.
+            </p>
+        </div>
+
+    </div>
+    <h2 class="heading-event">VÅRE ARRANGEMENT MULIGHETER</h2>
+    <div class="line-res"></div>
+
+    <div class="container-reservasjon-text-img brylluptxt" id="reservasjon-side2">
+
+
+        <div class="sidetekst">
+            <div class="content">
+                <h1>BRYLLUP</h1>
+                <P>
+                    Vi ordner alt det praktiske til en av dine viktigste dager i livet. Bryllupene vi ordner kan romme
+                    opptil 200 gjester på våre nydelige 1000 kvadratmeter. Maten kan tilpasses hver enkelt gjest sånn at
+                    alle for en nydelig aften og en Photoshoot i vår botaniske hage er minner som kommer til å vare for
+                    livet.
+                </P>
+                <p>
+                    Man kan velge enten italiensk eller fransk meny, men ønsker og tilpasninger er alltid velkommen. Bli
+                    med på å være en gjest på ditt eget bryllup. Velkommen til Karols Cafe.
+                </P>
+            </div>
+        </div>
+        <div class="bilde-next-to-text bryllup"></div>
+    </div>
+
+    <div class="container-reservasjon-text-img" id="reservasjon-side2">
+
+        <div class="bilde-next-to-text mai17"></div>
+        <div class="sidetekst">
+            <div class="content">
+                <h1>17.MAI</h1>
+                <p>
+                    Hva er bedre enn å feire vår frihetsdag med venner og familie og kose seg? Det er vel ikke så mye
+                    man kommer på, og det er derfor vi tilbyr deg stedet og roen til tilfellet. Våre lokaler på 1000
+                    kvadratmeter kan romme opptil 200 gjester, hvor man har friheten til å være ute i vår egen
+                    botaniskehage og nyte fantastiske maten som tilpasses etter behov fra våre kokker.
+                </p>
+                <p>
+                    Kom å feir 17 mai med oss og nyt enten en fransk, italiensk vri fra våre kokker som dekker til et
+                    tradisjonelt 17 mai bord.
+                </P>
+            </div>
+        </div>
+    </div>
+
+    <section class="bord-booking-section" id="res-section2">
+        <h2>FORESPØR ARRANGEMENT HOS OSS NÅ</h2>
+        <div class="bord-booking">
+            <div class="bord-booking-content">
+                <h3>RESERVASJON</h3>
+                <form>
+                    <div class="form-row-bord-booking">
+                        <input type="text" placeholder="Type arrangement">
+                    </div>
+                    <div class="form-row-bord-booking">
+                        <select name="hours">
+                            <option value="hour-select">Fra Kl: </option>
+                            <option value="10">10: 00</option>
+                            <option value="10">12: 00</option>
+                            <option value="10">14: 00</option>
+                            <option value="10">16: 00</option>
+                            <option value="10">18: 00</option>
+                            <option value="10">20: 00</option>
+                            <option value="10">22: 00</option>
+                        </select>
+                        <select name="hours">
+                            <option value="hour-select">Til Kl: </option>
+                            <option value="10">10: 00</option>
+                            <option value="10">12: 00</option>
+                            <option value="10">14: 00</option>
+                            <option value="10">16: 00</option>
+                            <option value="10">18: 00</option>
+                            <option value="10">20: 00</option>
+                            <option value="10">22: 00</option>
+                        </select>
+                    </div>
+                    <div class="form-row-bord-booking">
+                        <input type="text" placeholder="Fullt navn">
+                        <input type="text" placeholder="Telefonnummer">
+                    </div>
+                    <div class="form-row-bord-booking">
+                        <input type="number" placeholder="Antall gjester" min="1">
+                        <input type="submit" value="FORESPØR">
+                    </div>
+                </form>
+            </div>
+            <div class="bord-booking-img img-event">
+            </div>
+        </div>
+    </section>
+
+</body>
+<footer>
+    <div class="footer-bok">
+        <div class="footer-style">
+            <div class="footer-1">
+                <h3 class="footer-overskrift">Praktisk Info
+                </h3>
+                <h5>Eventmanager: <a href="mailto: ap@example12345.com">Andre Kastersen </a></h5>
+                <br>
+                <h5>Daglig leder: <a href="mailto: ap@example12345.com">Per Pettersen</a></h5>
+                <a href="vårekilder.html" class="kildeknapp">Våre kilder</a>
+            </div>
+            <div class="footer-2">
+                <h3 class="footer-overskrift">Åpningstider</h3>
+                <h5>Mandag-Fredag 9.00-21.00</h5>
+                <br>
+                <h5>Lørdag-Søndag 11.00-23.00</h5>
+
+            </div>
+            <div class="footer-3">
+                <h3 class="footer-overskrift">Adresse</h3>
+                <h5>Pilestredet 35</h5>
+                <br>
+                <h5>10 minutters gåavtand fra Nationaltheatret</h5>
+            </div>
+
+            <div class="kopirett">
+                <p>Copyright @2022 | Lagd av Karol og Mathias | Karol's Cafe</p>
+            </div>
+
+            <ul class="sosiale-medier">
+                <li><a href="https://tetris.com/play-tetris" target="_blank"><img class="sosiale-png"
+                            src="./images/face4.png"></a></li>
+                <li><a href="https://tetris.com/play-tetris" target="_blank"><img class="sosiale-png2"
+                            src="./images/insta11.png"></a></li>
+                <li><a href="https://tetris.com/play-tetris" target="_blank"><img class="sosiale-png"
+                            src="./images/snap3.png"></a></li>
+                <li><a href="https://tetris.com/play-tetris" target="_blank"><img class="sosiale-png"
+                            src="./images/twitter3.png"></a></li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
+
+</html>

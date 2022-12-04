@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./images/k-favicon.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="logo">
+                    <a href="/index.html">KAROLS CAFE</a>
+                </div>
+                <input type="checkbox" id="nav-check">
+                <label for="nav-check" class="nav-toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html" class="active">HJEM</a></li>
+                        <li><a href="meny.html">MENY</a></li>
+                        <li><a href="accessibility.html">ACCESSIBILITY</a></li>
+                        <li><a href="omoss.html">TEKNOLOGI OG SAMFUNN</a></li>
+                        <li class="reservasjon-responsive"><a href="reservation.html">RESERVASJON</a></li>
+                </nav>
+                <li class="reservasjon"><a href="reservation.html">RESERVASJON</a></li>
+            </div>
+        </div>
+    </header>
+    <div class="container-sidestart accessibility">
+        <div class="overskrift">
+            <h1>ACCESSIBILITY</h1>
+            <br>
+            <p class="overskift-under">Hvordan vi testet siden vår for universell utforming og tilgjenlighet</p>
+
+        </div>
+    </div>
+
+    <div class="accessibility-bakgrunn">
+        <div class="accessibility-content">
+            <h2>INTRO</h2>
+            <p>
+                Når man lager en nettside, er det viktig at den er brukbar for alle.
+                WCAG 2.1 (Web Content Accessibility Guidelines) gir anbefalinger
+                for hvordan man kan gjøre en nettside mer tilgjengelig for de fleste,
+                uansett funksjonshemninger. Når vi skulle i gang med å bestemme oss for
+                design både før og under design prosessen, måtte vi ta dette i konsiderasjon.
+                Vi valgte å bruke en automatisert test, ved å bruke WAVE Web Accessibility Evaluation Tool.
+            </p>
+        </div>
+        <br>
+        <div class="accessibility-content">
+            <h2>FARGE VALG</h2>
+            <p>
+                Først måtte vi velge hvilke varger som sto i kontrast til hverandre.
+                Vi ar innom mørkeblå og hvit, men endte opp med de to fargene som er mest forskjellig fra hverandre,
+                nemlig svart bakgrunn og hvit tekst. For knapper, valgte vi å endre fargen for å gjøre de mer
+                synlige som knapper. Vi valgte derfor å gå med en oransje bakgrunnsfarge med hvit tekst,
+                så den skiller seg ut. Når det kommer til en nettside for en restaurant hender det at
+                det å gjøre en reservasjon er hovedmålet, og derfor en knapp som burde skille seg ut.
+            </p>
+        </div>
+        <br>
+        <div class="accessibility-content">
+            <h2>ACCESSIBILITY TOOL</h2>
+            <p>
+                Når vi var ferdige med nettsiden, kjørte vi den gjennom Webaims Web Accessibilty Evaluation Tool.
+                Før dette publiserte vi nettsiden gjennom github for å få en link vi kunne kjøre gjennom programmet.
+                Vi fikk en “Error” varsling. Det er fordi at når man bruker nettsiden på en mindre skjerm,
+                eks en mobiltelefon, så vil det dukke opp en toggle-button som vil gi tilgang på navigasjonsbaren,
+                men den er satt til display:none, og fremstår derfor som en tom label, og innholdet er "span" tagger
+                som brukes for de tre linjene, kjennetegnet som en “hamburger-meny”.
+            </p>
+            <img src="./images/form-label-error.png" alt="" class="form-label-error">
+            <br>
+            <p>
+                Vi fikk også noen alerts på
+                den første testen vår. Det gjaldt bruk av overskrifter, hvor vi hadde hoppet fra h2 til h5.
+            </p>
+            <img src="./images/heading-alert.png" alt="" class="heading-alert">
+            <br>
+            <p>
+                Når vi kom til reservasjons siden, kom det noen flere “Error” varslinger,
+                fordi vi ikke hadde noen tilsvarende etikett til hvert input felt. Istedet har
+                vi lagt inn placeholder tekst som beskriver hvert input felt, så vi tenkte at det ikke
+                var nødvendig.
+            </p>
+            <img src="./images/label-image-error.png" alt="" class="label-image-error">
+        </div>
+        <br>
+
+        <div class="accessibility-content">
+            <h2>MANUELLE TESTER</h2>
+            <p>
+                Vi måtte også gjøre noen tester med oss selv som forsøkskaniner, ved å se over siden som en
+                med nedsatt synsevner, og en med en motorisk funksjonshemning. Det endte med at vi skjønte
+                at vi måtte forandre tekststørrelsen noen plasser, til en større verdi, for å gjøre den mer
+                lesbar dersom en med nedsatt syn skulle inn på siden å lese om cafeen. Vi gjorde litt research og ifølge
+                <a href="https://accessibleweb.com/question-answer/minimum-font-size/">Accessible Web</a> så
+                er det fra og med 16px som er minimum font-size.
+            </p>
+            <br>
+            <p>
+                Vi forsikret oss også
+                om det var mulig å navigere seg på siden ved bruk av “tab” og “tab + shift” for å gå frem
+                og tilbake til knappene og sidene. Denne testen var for å teste at en med motorisk funksjonshemning
+                som sliter med å bevege seg med styreplate/mus, skal også ha mulighet til å utforske siden.
+            </p>
+
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer-bok">
+        <div class="footer-style">
+            <div class="footer-1">
+                <h3 class="footer-overskrift">Praktisk Info
+                </h3>
+                <h5>Eventmanager: <a href="mailto: ap@example12345.com">Andre Kastersen </a></h5>
+                <br>
+                <h5>Daglig leder: <a href="mailto: ap@example12345.com">Per Pettersen</a></h5>
+                <a href="vårekilder.html" class="kildeknapp">Våre kilder</a>
+            </div>
+            <div class="footer-2">
+                <h3 class="footer-overskrift">Åpningstider</h3>
+                <h5>Mandag-Fredag 9.00-21.00</h5>
+                <br>
+                <h5>Lørdag-Søndag 11.00-23.00</h5>
+
+            </div>
+            <div class="footer-3">
+                <h3 class="footer-overskrift">Adresse</h3>
+                <h5>Pilestredet 35</h5>
+                <br>
+                <h5>10 minutters gåavtand fra Nationaltheatret</h5>
+            </div>
+
+            <div class="kopirett">
+                <p>Copyright @2022 | Lagd av Karol og Mathias | Karol's Cafe</p>
+            </div>
+
+            <ul class="sosiale-medier">
+                <li><a href="https://tetris.com/play-tetris" target="_blank"><img class="sosiale-png"
+                            src="./images/face4.png"></a></li>
+                <li><a href="https://tetris.com/play-tetris" target="_blank"><img class="sosiale-png2"
+                            src="./images/insta11.png"></a></li>
+                <li><a href="https://tetris.com/play-tetris" target="_blank"><img class="sosiale-png"
+                            src="./images/snap3.png"></a></li>
+                <li><a href="https://tetris.com/play-tetris" target="_blank"><img class="sosiale-png"
+                            src="./images/twitter3.png"></a></li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
+
+</html>
